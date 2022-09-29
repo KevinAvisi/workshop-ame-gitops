@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: registry.gitlab.com/koen.konst/random-teams-generator/backend:fix-backend-url
+        image: registry.gitlab.com/koen.konst/random-teams-generator/backend:fix-frontend-auth
         resources: {}
         ports:
           - name: http
