@@ -29,4 +29,7 @@ spec:
       containers:
       - name: app
         image: registry.gitlab.com/koen.konst/random-teams-generator/frontend:fix-backend-url
+        ports:
+          - name: http
+            containerPort: 80
 ---
