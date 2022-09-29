@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: podinfo
+  name: random-team-generator
 spec:
   ingressClassName: nginx
   rules:
@@ -9,7 +9,7 @@ spec:
       paths:
       - backend:
           service:
-            name: podinfo
+            name: frontend
             port: 
               name: http
         path: /
