@@ -2,8 +2,6 @@ namespace: random-team-generator
 resources:
   - ns.yaml
   - ingress.yaml
-
-patches:
   - backend/deployment.yaml
   - frontend/deployment.yaml
   - postgres/deployment.yaml
