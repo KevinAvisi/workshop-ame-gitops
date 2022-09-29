@@ -1,7 +1,7 @@
 bases:
   - github.com/stefanprodan/podinfo/kustomize?ref=4.0.2
 
-namespace: podinfo
+namespace: random-team-generator
 resources:
   - ns.yaml
   - ingress.yaml
