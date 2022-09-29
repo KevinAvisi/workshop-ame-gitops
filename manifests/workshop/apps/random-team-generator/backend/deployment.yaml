@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: registry.gitlab.com/koen.konst/random-teams-generator/backend:1-0
+        image: registry.gitlab.com/koen.konst/random-teams-generator/backend:1-1
         resources: {}
       - env:
           - name: SPRING_DATASOURCE_URL
