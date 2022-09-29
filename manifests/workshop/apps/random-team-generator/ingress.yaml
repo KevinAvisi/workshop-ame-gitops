@@ -10,7 +10,6 @@ spec:
       - backend:
           service:
             name: frontend
-            port: 
-              name: http
+            port: 80
         path: /
         pathType: Prefix
