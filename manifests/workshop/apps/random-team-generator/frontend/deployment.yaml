@@ -15,5 +15,5 @@ spec:
     spec:
       containers:
       - name: app
-        image: registry.gitlab.com/koen.konst/random-teams-generator/frontend:1-0
+        image: registry.gitlab.com/koen.konst/random-teams-generator/frontend:1-1
 ---
