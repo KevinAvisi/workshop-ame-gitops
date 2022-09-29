@@ -7,4 +7,6 @@ resources:
   - ingress.yaml
 
 patches:
-  - deployment.yaml
+  - backend/deployment.yaml
+  - frontend/deployment.yaml
+  - postgres/deployment.yaml
