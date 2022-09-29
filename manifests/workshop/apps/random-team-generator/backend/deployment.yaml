@@ -1,0 +1,25 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: backend
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+  namespace: random-team-generator
+spec:
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+      - name: app
+        image: registry.gitlab.com/koen.konst/random-teams-generator/backend:1-0
+        resources: {}
+---
