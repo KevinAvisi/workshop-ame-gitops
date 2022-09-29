@@ -17,4 +17,11 @@ spec:
       - name: app
         image: registry.gitlab.com/koen.konst/random-teams-generator/backend:1-0
         resources: {}
+      - env:
+          - name: SPRING_DATASOURCE_URL
+            value: "jdbc:postgresql://postgres.random-team-generator:5432/rtg?currentSchema=rtg"
+          - name: SPRING_DATASOURCE_PASSWORD
+            value: "rtg_user"
+          - name: SPRING_DATASOURCE_USERNAME
+            value: "rtg_user"
 ---
