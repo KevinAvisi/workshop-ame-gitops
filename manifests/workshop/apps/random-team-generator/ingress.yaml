@@ -1,7 +1,8 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: random-team-generator
+  name: random-team-generator-ingress
+  namespace: random-team-generator
 spec:
   ingressClassName: nginx
   rules:
